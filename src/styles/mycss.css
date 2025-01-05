@@ -1,0 +1,663 @@
+:root {
+ 
+  --color-secondary: #ffffff; 
+  --color-accent: #00b1c1;
+  --color-primary: #1F316F;
+}
+/* filter */
+
+
+/* Styling the filter container */
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  gap: 35px !important; 
+  /* Make the container take the full viewport height */
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+/* Style for form-filter input fields with modern, sleek look */
+.form-filter {
+  width: 100% !important;
+  max-width: 200px !important; /* Limit width for better alignment */
+  padding: 10px 8px !important;
+  font-size: 18px !important;
+  font-family: 'Arial', sans-serif !important;
+  border: none;
+  background-color: var(--color-secondary) !important;
+  border-bottom: 3px solid var(--color-primary) !important;
+  border-radius: 2px !important;
+  color: var(--color-primary) !important;
+  transition: all 0.3s ease-out !important;
+  margin-bottom: 0px !important;
+  position: relative;
+}
+
+/* Icon inside the input fields */
+
+
+/* Focus effect - sleek glow and lift effect */
+
+
+/* Placeholder text style with a modern feel */
+
+
+/* Hover effect - subtle shadow and color change */
+.form-filter:hover {
+  transform: scale(1.02) !important; /* Slight zoom effect */
+}
+.form-filter:focus{
+  outline: none;
+  border-bottom: var(--color-accent);
+}
+/* Responsive behavior: stacking on smaller screens */
+
+
+
+.small{
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* login image */
+.loginimg {
+  background-image: url('/loginpic.png'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image within the div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  border-top-left-radius:10px ;
+}
+
+/* login-btn */
+.major-btn {
+  border: none;
+  letter-spacing: 0.5px;
+  color: var(--color-secondary); /* White text for contrast */
+  font-size: 20px;
+  font-weight: 650;
+  border-radius: 6px;
+  background-color: var(--color-primary) !important; /* Assuming --color-primary is a distinctive color */
+  width: 250px; /* Slightly wider for better user interaction */
+  padding: 10px 25px; /* Vertically centered text */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+  text-align: center !important; 
+  justify-self:center !important;
+}
+
+.major-btn:hover {
+  transform: scale(1.035); 
+}
+
+.major-btn:active {
+  background-color: var(--color-accent) !important; 
+  transform: scale(1); 
+}
+
+.btn-sm:hover{
+  background-color: var(--color-accent) !important;
+  border:var(--color-accent) 1px solid ;
+}
+
+/* slogan */
+.slogan{ 
+  border-top-left-radius: 10px;
+  border-top-right-radius:10px ;
+  font-weight: 500;
+  background-color: var(--color-secondary);
+  padding: 35px 35px 10px 35px;
+  font-size: 30px;
+  color: var(--color-primary) !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Path2Health{
+  color: var(--color-accent);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.text-primary{
+  font-weight: 700 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: var(--color-primary) !important;
+}
+
+.form-control {
+  font-family:Arial, Helvetica, sans-serif;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  background-color: var(--color-secondary);
+  border-radius: 2px !important;
+  border-bottom: 3px solid var(--color-primary);
+  font-size: 20px;
+  color: var(--color-primary);
+}
+
+.form-control:focus{
+  box-shadow: none;
+  outline: none;
+  border-bottom:3px solid var(--color-accent);
+}
+
+.form-label{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 5px;}
+
+  .form-select {
+    font-size: 20px;
+    background-color: var(--color-secondary);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    border-bottom: 3px solid var(--color-primary);
+    color: var(--color-primary); /* Ensure text color is the same as primary */
+  }
+  
+  .form-select:focus {
+    box-shadow: none;
+    outline: none;
+    border-bottom: 3px solid var(--color-accent); /* You can change this color to highlight focus */
+  }
+
+  .form-select-item{
+background-color: var(--color-primary);
+    font-size: 15px;
+  }
+
+  .form-select option {
+    background-color: var(--color-primary);
+    color: var(--color-secondary); /* Placeholder color */
+    font-size: 15px; /* Optional: Make it italic to differentiate */
+  }
+  .text-center .btn{  
+    border: none;
+    color: var(--color-secondary);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 6px;
+    background-color: var(--color-primary);
+    width: 150px;
+    justify-content: center;
+    transition: background-color 0.25s;
+  }
+  .btn:hover{color: var(--color-secondary);
+    background-color: var(--color-accent);}
+
+    .card-emp {
+      border: solid var(--color-primary) 2px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: var(--color-secondary);
+      width: 18rem;
+      height: 25rem; /* Increased height for the entire card */
+      margin: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .card-emp:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Card image styling */
+    .card-img-top {
+      width: 100%;
+      height: 250px; /* Increased image height */
+      object-fit: cover;
+      border-bottom: 3px solid var(--color-primary);
+    }
+    
+    /* Card body styling */
+    .card-body {
+      padding: 15px;
+      height: calc(100% - 250px); /* Adjusted to accommodate the increased image height */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    /* Card title styling */
+    .card-title {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 10px;
+    }
+    
+    /* Card text styling */
+    .card-text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: var(--color-primary);
+      margin-bottom: 20px;
+    }
+    
+    /* Button inside the card */
+    .card-body .btn {
+      border: none;
+      color: var(--color-secondary);
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 6px;
+      background-color: var(--color-primary);
+      width: 100%;
+      padding: 10px;
+      transition: background-color 0.3s;
+    }
+    
+    .card-body .btn:hover {
+      background-color: var(--color-accent);
+      color: var(--color-secondary);
+    }
+    
+.text-center-title{
+  background-color: var(--color-primary) !important;
+  color: var(--color-accent);
+  border-radius: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.text-white{
+  text-align: center;
+}
+
+.card-header{
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  box-shadow: none;
+  border: 2px solid var(--color-accent);
+  
+}
+/* Dropdown Button Style */
+.btn-dropdown {
+  border: none;
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 12px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Prevent the name from changing color */
+.btn-dropdown span {
+  color: var(--color-primary);
+}
+
+/* Hover state for the button */
+.btn-dropdown:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Prevent hover effect from affecting the name */
+.btn-dropdown:hover span {
+  color: var(--color-primary);
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.dropdown-item {
+  font-size: 16px;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  border: none;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dropdown-item:active {
+  background-color: var(--color-primary) !important;
+
+}
+.dropdown-item:hover {
+  color: var(--color-primary);
+  background-color: var(--color-accent);
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+/* Optional: Custom text styles for the dropdown */
+.text-light {
+  color: var(--color-secondary) !important;
+}
+
+.codeemr{
+  color: var(--color-secondary) !important;
+}
+.code-type{
+  color: var(--color-secondary) !important;
+}
+
+
+
+
+.table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse:separate;
+  color: var(--color-accent);
+  padding: 15px;
+}
+
+.table th,
+.table td {
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid var(--color-primary) !important;
+}
+
+.table-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+.emr-tr {
+  transition: background 0.3s, transform 0.3s;
+}
+
+.emr-tr:hover {
+  transform: scale(1.02);
+}
+
+.broadcast {
+  border: none;
+  color: var(--color-secondary);
+  font-size: 16px;
+  border-radius: 6px;
+  background-color: var(--color-primary);
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+.broadcast:hover{
+  background-color: var(--color-accent);
+}
+.btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+}
+
+.history-vital-signs-li{
+  
+border-bottom: var(--color-accent) solid ;
+
+
+}
+.prescription-history{
+  border-bottom: var(--color-accent) solid ;
+
+}
+
+.diagnosis-history{
+  border-bottom: var(--color-accent) solid;
+
+}
+.pt-text-danger{
+  border-bottom: var(--color-accent) solid !important;
+}
+.pt-text-danger:hover{
+background-color: rgb(233, 15, 15);
+}
+
+/* Container styling for search inputs */
+
+
+/* Table styling */
+.table-hover {
+  background-color: white;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+}
+
+
+
+.table-hover th {
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.table-hover tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f2f8ff;
+}
+
+.table-hover td {
+  padding: 12px;
+}
+
+.action-btn{
+  border: none;
+  color: var(--color-secondary);
+  font-size: 16px;
+  justify-content: center !important;
+  font-weight: 600;
+  border-radius: 6px;
+  background-color: var(--color-primary);
+  width: 47%;
+  padding: 9px;
+  transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+  transform: scale(1.035); 
+}
+
+.action-btn:active {
+  background-color: var(--color-accent) !important; 
+  transform: scale(1); 
+}
+.cancel-btn{border: none;
+  color: var(--color-secondary);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  background-color:rgb(233, 15, 15);
+  width: 18%;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.cancel-btn:hover{
+  background-color:rgba(233, 15, 15, 0.684);
+  color: var(--color-secondary);
+}
+
+.confirm-btn{
+  color: var(--color-secondary);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  background-color:rgb(37, 204, 3);
+  width: 18%;
+  padding: 10px;
+  transition: background-color 0.3s;
+  border: none;
+}
+.confirm-btn:hover{
+  background-color:rgba(37, 204, 3, 0.684);
+  color: var(--color-secondary);
+}
+/* Special styling for list items */
+
+
+/* Modal styling */
+.modal.fade.show {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  border-radius: 8px;
+  border: 2px solid var(--color-accent);
+}
+
+.modal-header {
+  background-color: var(--color-primary) !important;
+  color: white;
+}
+
+.modal-footer {
+  border-top: 1px solid #dcdcdc;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.modal-footer .btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.modal-footer .btn:hover {
+  filter: brightness(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Path2Health:active{color: orange;}
